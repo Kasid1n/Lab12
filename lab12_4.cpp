@@ -1,6 +1,8 @@
 #include<iostream>
 
 using namespace std;
+template <typename Type>
+void mySwap(Type &a, Type &b); 
 
 int main(){
 	int x, y;
@@ -30,3 +32,9 @@ int main(){
 	return 0;
 }
 
+template<typename Type>
+void mySwap(Type &a, Type &b){
+	Type c = a;
+	a=b;
+	b=c;
+}
